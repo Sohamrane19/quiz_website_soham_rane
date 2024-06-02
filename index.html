@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="heading"><span>Q</span>uizz.com</div>
+        <div id="tab2">
+            <label for="difficulty">Difficulty of questions</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div id="tab3">
+            <label for="field">Field</label>
+            <select id="field">
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Science">Science</option>
+                <option value="Sports">Sports</option>
+                <option value="Literature">Literature</option>
+                <option value="Mathematics">Mathematics</option>
+            </select>
+        </div>
+        <button class="startBtn" onclick="startQuiz()" style="cursor: pointer;">Start the Quiz</button>
+    </div>
+
+    <div style="display: none;" id="questionDisplay">
+        <h2 id="questionid">Sample Question</h2>
+        
+        <div>
+            <div id="opt1">
+                <input type="radio" value="0" name="option" id="op1">
+                <label for="op1" id="o1" class="options">Option 1</label>
+            </div>
+            <div id="opt2">
+                <input type="radio" value="1" name="option" id="op2">
+                <label for="op2" id="o2" class="options">Option 2</label>
+            </div>
+            <div id="opt3">
+                <input type="radio" value="2" name="option" id="op3">
+                <label for="op3" id="o3" class="options">Option 3</label>
+            </div>
+            <div id="opt4">
+                <input type="radio" value="3" name="option" id="op4">
+                <label for="op4" id="o4" class="options">Option 4</label>
+            </div>
+        </div>
+        <button id="nextBtn" onclick="nextQuestion()" style="cursor: pointer;">Next</button>
+    </div>
+
+    <div style="display: none;" id="resultDisplay">
+        <h2 id="id1">Your Score</h2>
+        <p id="score"></p>
+        <button id="id2" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

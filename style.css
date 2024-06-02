@@ -1,0 +1,121 @@
+#container{
+    background-color: rgb(132, 231, 231);
+    width: 400px;
+    max-width: 50%;
+    margin: auto;
+    border: 2.9px solid black;
+    border-radius: 10px;
+    margin-top: 20vh;
+
+   
+
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(140, 49, 128);
+}
+#heading{
+    font-size: 2em;
+    color: rgb(15, 34, 9);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+span{
+    color: rgb(237, 73, 19);
+    font-size: 2.1em;
+   
+
+}
+
+#noofquestions, #difficulty, #field {
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+    font-size: 18px;
+    
+    
+    
+}
+
+label{
+    font-size: 1.2em;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.startBtn{
+   background-color: bisque;
+   border: 1px solid black;
+   border-radius: 2px;
+   width: 48%;
+   margin-left: 26%;
+   margin-top: 6%;
+   margin-bottom: 12%;
+   font-size: 18px;
+
+  
+    
+}
+
+#tab1,#tab2,#tab3{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#tab3{
+    border-bottom: 2px solid black;
+    padding-bottom: 29px;
+
+}
+
+
+#questionDisplay{
+    margin: auto;
+    background-color: aquamarine;
+    width: 60vh;
+    padding: 26px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: 10%;
+
+}
+
+#nextBtn{
+    background-color: blue;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+
+}
+
+#opt1,#opt2,#opt3,#opt4{
+    background-color: azure;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 10px;
+
+    
+}
+
+#o1,#o2,#o3,#o4{
+    width: 400px;
+}
+
+
+#resultDisplay{
+    margin: auto;
+    background-color: aquamarine;
+    width: 60vh;
+    padding: 26px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: 10%;
+}
