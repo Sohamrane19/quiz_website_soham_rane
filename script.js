@@ -488,6 +488,16 @@ const optionsElements = [
     document.getElementById("o4")
 ];
 
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+
+
 function startQuiz() {
     const containerElement = document.getElementById("container");
     const questionDisplayElement = document.getElementById("questionDisplay");
@@ -499,7 +509,8 @@ function startQuiz() {
     filteredQuestions = scienceQuestions.filter(question => {
         return question.difficulty === selectedDifficulty && question.field === selectedField;
     });
-
+    filteredQuestions = shuffle(filteredQuestions);
+    console.log(filteredQuestions);
     currentQuestion = 0;
     score = 0;
     loadQuestion();
